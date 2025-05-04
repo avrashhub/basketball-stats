@@ -1,32 +1,19 @@
 package avrash.source.model.dto;
 
+import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 
 @Data
 public class GameStatsDto extends StatsBaseDto {
 
-    private String season;
-
+    @NotBlank
     private String gameId;
 
+    @NotBlank
     private String teamId;
 
+    @NotBlank
     private String playerId;
 
-    private Integer points;
-
-    private Integer rebounds;
-
-    private Integer assists;
-
-    private Integer steals;
-
-    private Integer blocks;
-
-    private Integer fouls;
-
-    private Integer turnovers;
-
-    private Float minutes;
 
 }
