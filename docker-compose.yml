@@ -1,4 +1,9 @@
 services:
+  basketball-source:
+    image: avrash/basketball-source:0.0.1
+    container_name: basketball-source
+    ports:
+      - "8081:8081"
   basketball-webapi:
     image: avrash/basketball-webapi:0.0.1
     container_name: basketball-webapi
